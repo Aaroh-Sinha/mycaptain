@@ -11,4 +11,5 @@ num_1= num_1 + num_2;
 num_2= num_1 - num_2;
 num_1= num_1 - num_2;
 printf("After swapping  num1= %f and num2= %f",num_1,num_2);
+
 }
