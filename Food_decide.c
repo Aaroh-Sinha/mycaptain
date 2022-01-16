@@ -16,4 +16,5 @@ scanf("%d",&num);
  case 5:printf("Pasta\nRs 179");
         break;
  }
+ 
 }
