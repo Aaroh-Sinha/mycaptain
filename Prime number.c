@@ -1,8 +1,9 @@
 #include <stdio.h>
-void prime(int x);
+int prime(int x,int j);
 int main()
 {
   int num;
+  int y=2;
   printf("Enter the number: ");
   scanf("%d",&num);
   if(num==1)
@@ -10,25 +11,27 @@ int main()
   else if(num==2)
   printf("2 is an even prime number");
   else
-  prime(num);}
+  prime(num,y);
+
+}
   
-  void prime(int x)
+  int prime(int x,int j)
   {
-  //for(i=2;i<=num-1;i++)
-  int j,k,t;
-  j=2;
+ 
+  int k,t,check;
+  
   t=x%j;
-  j++;
-  if(t==0)
-  printf("%d is not a prime number",x);
-  //return 1;
+
   
-  else
-  {
+  
+  
    if(j==x)
    {printf("%d is a prime number",x);}
    //return 1;}
+   else if(t==0)
+  printf("%d is not a prime number",x);
    else
-   prime(x);
+   {j++;
+   check=prime(x,j);}
   }
-  }
+  
